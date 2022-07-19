@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateAreas: {
-        layout: ['nav nav nav nav', 'sidebar leftmenu content rightmenu'],
+        layout: ['nav nav nav', 'sidebar content rightmenu'],
         small: ['nav', 'content']
       },
       gridTemplateColumns: {
-        layout: '0.7fr 0.9fr 1.5fr 0.9fr',
+        layout: '0.7fr 1.75fr 0.9fr',
         small: '1fr'
       },
       gridTemplateRows: {
-        layout: '2.75rem 3fr'
+        layout: '4rem 3fr'
       }
     }
   },
