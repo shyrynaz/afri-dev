@@ -7,7 +7,7 @@ import RightMenu from './containers/RightMenu';
 
 const App: FC = () => {
   return (
-    <div className='grid grid-cols-1'>
+    <div className='grid grid-rows-layout lg:grid-areas-layout lg:grid-cols-layout md:grid-cols-small md:grid-areas-small '>
       <Nav />
       <Main />
       <LeftMenu />

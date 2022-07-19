@@ -5,6 +5,8 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -12,7 +14,9 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <ErrorBoundary>{[<App key='App' />]}</ErrorBoundary>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
